@@ -1,3 +1,52 @@
+/* CUSTOM PROPS */
+:root {
+  --green-color: #5FB4A2;
+  --dark-blue: #203A4C;
+  --text-color: #33323D;
+  --very-light-grey-bg: #fAfAfA;
+  --light-grey: #eaeaeb;
+  --error-color:  #F43030;
+}
+
+
+/* FONT FACE */
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Italic.woff2") format("woff2"),
+  url("../fonts/IbarraRealNova-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Regular.woff2") format("woff2"),
+  url("../fonts/IbarraRealNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-ThinItalic.woff2") format("woff2"),
+  url("../fonts/PublicSans-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Thin.woff2") format("woff2"),
+  url("../fonts/PublicSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GLOBAL */
 html {
   height: 100%;
@@ -17,11 +66,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Public Sans", "Ibarra Real Nova", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
@@ -32,11 +81,64 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 64px;
+  padding-bottom: 18px;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__logo {
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  color: var(--text-color);
+}
+
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 42px;
+}
+
+.sitenav__link {
+  display: inline-block;
+  font-family: "Public Sans", "Arial", sans-serif ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sitenav__link:hover {
+  color: var(--green-color);
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
 }
 
 
