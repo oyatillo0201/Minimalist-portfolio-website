@@ -91,11 +91,89 @@ img {
 
 /* BUTTON */
 .button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: var(--text-color);
+  overflow: hidden;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+
+.button:hover .button__primary .button__icon {
+  background-color: var(--green-color);
+}
+
+.button__primary {
   width: 100%;
   max-width: 200px;
-  border: 0;
+  padding: 17px;
+  padding-bottom: 17px;
+  display: flex;
+  align-items: center;
   background-color: var(--dark-blue);
   color: #fff;
+}
+
+.button__primary:hover {
+  background-color: var(--green-color);
+}
+
+.button__primary:active {
+  opacity: 0.6;
+}
+
+.button__icon {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #000;
+}
+
+.button__icon-img {
+  display: block;
+  width: 18px;
+  height: 14px;
+}
+
+.button__text {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.button__secondary {
+  display: inline-block;
+  padding: 17px 36px 17px 32px;
+  border: 1px solid var(--text-color);
+
+}
+
+.button__secondary:hover {
+  background-color: var(--text-color);
+  border: 0;
+  color: #fff;
+}
+
+.button__secondary:active {
+  border: 1px solid var(--text-color);
+  background-color: #fff;
+  color: var(--text-color);
+  opacity: 0.2;
 }
 
 .button__inner {
