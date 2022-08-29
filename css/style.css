@@ -467,3 +467,68 @@ hr {
 .sociasl__link:active {
   opacity: 0.6;
 }
+
+
+/* PORTFOLIO */
+.portfolio__card {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__card:last-child {
+  margin-bottom: 150px;
+}
+
+.portfolio__card:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.portfolio__card:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.portfolio__card-img {
+  display: block;
+  width: 540px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.portfolio__content {
+  padding-top: 103px;
+  padding-bottom: 103px;
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  width: 100%;
+  max-width: 350px;
+}
+
+.portfolio__content {
+  margin-right: 125px;
+  margin-left: 125px;
+}
+
+.portfolio__card-heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--text-color);
+}
+
+.portfolio__card-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color);
+}
