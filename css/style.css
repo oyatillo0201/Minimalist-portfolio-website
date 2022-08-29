@@ -285,8 +285,8 @@ img {
 
 .hero__info {
   position: absolute;
-  left: 395px;
-  bottom: 157px;
+  left: 0;
+  bottom: 0;
   z-index: 555;
   width: 100%;
   max-width: 455px;
