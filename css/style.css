@@ -393,3 +393,77 @@ hr {
   letter-spacing: -0.357143px;
   color: var(--text-color);
 }
+
+
+/* FOOTER */
+.site-footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--text-color);
+}
+.site-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__logo {
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  margin-right: 49px;
+  color: #fff;
+}
+
+.site-footer__sitenav {
+  margin-right: auto;
+}
+
+.site-footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  /* margin-right: auto; */
+  list-style: none;
+}
+
+.site-footer__item:not(:last-child) {
+  margin-right: 42px;
+}
+
+.site-footer__link {
+  display: inline-block;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.sociasl__link {
+  display: inline-block;
+}
+
+.sociasl__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.sociasl__link:hover {
+  color: var(--green-color);
+  opacity: 0.6;
+}
+
+.sociasl__link:active {
+  opacity: 0.6;
+}
