@@ -361,3 +361,35 @@ img {
   line-height: 30px;
   color: var(--text-color);
 }
+
+/* PROMO */
+.promo {
+  padding-bottom: 150px;
+}
+
+.promo__container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+hr {
+  width: 534px;
+  display: inline-block;
+  opacity: 0.15;
+  /* border: 2px solid red; */
+}
+
+.promo__heading {
+  width: 100%;
+  max-width: 350px;
+  padding: 0;
+  margin: 0;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--text-color);
+}
