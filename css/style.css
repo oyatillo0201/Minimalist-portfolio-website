@@ -308,3 +308,56 @@ img {
   letter-spacing: -0.446429px;
   color: var(--text-color);
   }
+
+
+/* FEATURES */
+.features {
+  padding-bottom: 150px;
+}
+
+.features__container {
+  display: flex;
+}
+
+.features__img {
+  display: block;
+  margin-right: 125px;
+  width: 540px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.features__info {
+  width: 100%;
+  max-width: 350px;
+  padding-top: 50px;
+  padding-bottom: 46px;
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+
+}
+
+.features__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--text-color);
+}
+
+.features__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color);
+}
