@@ -273,6 +273,16 @@ img {
   padding-bottom: 150px;
 }
 
+.hero__wrapper {
+  position: relative;
+}
+
+.hero__img {
+  display: block;
+  width: 1110px;
+  height: 600px;
+}
+
 .hero__info {
   position: absolute;
   left: 395px;
